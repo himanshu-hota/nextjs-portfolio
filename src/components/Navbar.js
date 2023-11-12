@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -22,21 +22,24 @@ const Navbar = () => {
 
     const [screenWidth, setScreenWidth] = useState(768);
 
-    // Function to update screenWidth state when the window is resized
-    const updateScreenWidth = () => {
-        setScreenWidth(window.innerWidth);
-    };
-
     // Add an event listener to the window to update screenWidth on resize
-    useEffect(() => {
-        window.addEventListener('resize', updateScreenWidth);
-
-        if(screenWidth > 798) setNavbarOpen(false);
+    // useEffect(() => {
         
-        return () => {
-            window.removeEventListener('resize', updateScreenWidth);
-        };
-    }, [screenWidth]);
+    //     console.log(window);
+
+    //     // Function to update screenWidth state when the window is resized
+    //     const updateScreenWidth = () => {
+    //         setScreenWidth(window.innerWidth);
+    //     };
+
+    //     window.addEventListener('resize', updateScreenWidth);
+
+    //     if(screenWidth > 798) setNavbarOpen(false);
+        
+    //     return () => {
+    //         window.removeEventListener('resize', updateScreenWidth);
+    //     };
+    // }, [screenWidth]);
 
 
     return (
