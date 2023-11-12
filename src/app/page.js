@@ -3,8 +3,17 @@ import AchievementsSection from "@/components/AchievementsSection";
 import EmailSection from "@/components/EmailSection";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
+
+import dynamic from "next/dynamic";
+
+const Navbar = dynamic(
+  () => {
+    return import("@/components/Navbar");
+  },
+  { ssr: false }
+);
 
 
 export default function Home() {
