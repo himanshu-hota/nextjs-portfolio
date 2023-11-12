@@ -69,6 +69,8 @@ const ProjectSection = () => {
         setTag(newTag);
     };
 
+    const filteredProjects = projectsData.filter(project => project.tag.includes(tag));
+
     return (
         <>
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 '>My projects</h2>
@@ -76,10 +78,11 @@ const ProjectSection = () => {
             <div className="text-white flex flex-row justify-center items-center gap-2 py-6 ">
                <ProjectTags name="All" onClick={handleTagChange} isSelected={tag === "All"} /> 
                 <ProjectTags name="Web" onClick={handleTagChange} isSelected={tag === "Web"} /> 
+                <ProjectTags name="Mobile" onClick={handleTagChange} isSelected={tag === "Mobile"} /> 
             </div>
 
-            <div>
-                {projectsData.map(project => (
+            <div className='md:grid md:grid-cols-2 md:gap-12 xl:grid-cols-3'>
+                {filteredProjects.map(project => (
                     <ProjectCard
                         key={project.id}
                         title={project.title}
