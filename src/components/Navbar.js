@@ -20,7 +20,7 @@ const Navbar = () => {
 
     const [navbarOpen, setNavbarOpen] = useState(false);
 
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [screenWidth, setScreenWidth] = useState(768);
 
     // Function to update screenWidth state when the window is resized
     const updateScreenWidth = () => {
