@@ -12,40 +12,16 @@ const navlinks = [
     { title: 'About', path: '#about' },
     { title: 'Projects', path: '#projects' },
     { title: 'Contact', path: '#contact' },
-    { title: 'about', path: '#about' },
-
 ];
 
 const Navbar = () => {
 
     const [navbarOpen, setNavbarOpen] = useState(false);
 
-    const [screenWidth, setScreenWidth] = useState(768);
-
-    // Add an event listener to the window to update screenWidth on resize
-    // useEffect(() => {
-        
-    //     console.log(window);
-
-    //     // Function to update screenWidth state when the window is resized
-    //     const updateScreenWidth = () => {
-    //         setScreenWidth(window.innerWidth);
-    //     };
-
-    //     window.addEventListener('resize', updateScreenWidth);
-
-    //     if(screenWidth > 798) setNavbarOpen(false);
-        
-    //     return () => {
-    //         window.removeEventListener('resize', updateScreenWidth);
-    //     };
-    // }, [screenWidth]);
-
-
     return (
-        <nav className='fixed mx-auto border border-[#33353F]  top-0 left-0 right-0 p-4 z-10 bg-[#121212] bg-opacity-100'>
+        <nav id='about' className='fixed mx-auto border border-[#33353F]  top-0 left-0 right-0 p-4 z-10 bg-[#121212] bg-opacity-100'>
             <div className='flex flex-wrap items-center justify-between mx-auto p-4 px-4'>
-                <Link href={'/'} className='text-2xl text-white font-semibold '> BOLD </Link>
+                <Link href={'/'} className='text-2xl text-white font-semibold '> PORTFOLIO </Link>
 
                 <div className="mobile-menu block md:hidden ">
                     {

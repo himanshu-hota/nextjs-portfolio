@@ -8,58 +8,95 @@ import { motion, useInView } from 'framer-motion';
 const projectsData = [
     {
         id: 1,
-        title: "React Portfolio Website",
-        description: "Project 1 description",
+        title: "Contact List",
         image: "/images/projects/1.png",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
+        tag: ["All", "React"],
+        gitUrl: "https://github.com/himanshu-hota/contacts",
+        previewUrl: "https://main--jocular-elf-15d6df.netlify.app/",
+        style: "shadow-green-900",
     },
     {
         id: 2,
-        title: "Potography Portfolio Website",
-        description: "Project 2 description",
+        title: "Netflix",
         image: "/images/projects/2.png",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
+        tag: ["All", "React"],
+        gitUrl: "https://github.com/himanshu-hota/Netflix-clone",
+        previewUrl: "https://netflix-clone-3bbfc.web.app/",
+        style: "shadow-blue-500",
     },
     {
         id: 3,
-        title: "E-commerce Application",
-        description: "Project 3 description",
+        title: "NFT Marketplace",
         image: "/images/projects/3.png",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
+        tag: ["All", "React"],
+        gitUrl: "https://github.com/himanshu-hota/nft-marketplace",
+        previewUrl: "https://nft-market-bc1da.web.app/",
+        style: "shadow-yellow-500",
     },
     {
         id: 4,
-        title: "Food Ordering Application",
-        description: "Project 4 description",
+        title: "E-Commerce Dashboard",
         image: "/images/projects/4.png",
-        tag: ["All", "Mobile"],
-        gitUrl: "/",
-        previewUrl: "/",
+        tag: ["All", "React"],
+        gitUrl: "https://github.com/himanshu-hota/ecommerce",
+        previewUrl: "https://e-com-c6253.web.app/",
+        style: "shadow-blue-600",
     },
     {
         id: 5,
-        title: "React Firebase Template",
-        description: "Authentication and CRUD operations",
+        title: "XMDB",
         image: "/images/projects/5.png",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
+        tag: ["All", "Javascript"],
+        gitUrl: "https://github.com/himanshu-hota/XMDB",
+        previewUrl: "https://himanshu-hota.github.io/Big-barber/",
+        style: "shadow-white",
     },
     {
         id: 6,
-        title: "Full-stack Roadmap",
-        description: "Project 5 description",
+        title: "Hair Studio",
         image: "/images/projects/6.png",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
+        tag: ["All", "Javascript"],
+        gitUrl: "https://github.com/himanshu-hota/Big-barber",
+        previewUrl: "https://himanshu-hota.github.io/Big-barber/",
+        style: "shadow-sky-400",
     },
+    {
+        id: 7,
+        title: "Gravero",
+        image: "/images/projects/7.png",
+        tag: ["All", "Javascript"],
+        gitUrl: "https://github.com/himanshu-hota/Gravero",
+        previewUrl: "https://himanshu-hota.github.io/Gravero/",
+        style: "shadow-gray-400",
+    },
+    {
+        id: 8,
+        title: "Shoe Store",
+        image: "/images/projects/8.png",
+        tag: ["All", "Next JS"],
+        gitUrl: "https://github.com/himanshu-hota/shoe-store-frontend",
+        previewUrl: "https://shoe-store-frontend-orpin.vercel.app/product/air-jordan-6-retro",
+        style: "shadow-purple-400",
+    },
+    {
+        id: 9,
+        title: "Portfolio",
+        image: "/images/projects/9.png",
+        tag: ["All", "Next JS"],
+        gitUrl: "https://github.com/himanshu-hota/nextjs-portfolio",
+        previewUrl: "https://nextjs-portfolio-nu-tawny.vercel.app/",
+        style: "shadow-sky-400",
+    }, 
+    {
+        id: 10,
+        title: "Supereme 1.0 & Striver A2Z",
+        image: "/images/projects/10.png",
+        tag: ["All", "DSA"],
+        gitUrl: "https://github.com/himanshu-hota/SupremeBatch",
+        previewUrl: "https://github.com/himanshu-hota/SupremeBatch",
+        style: "shadow-green-400",
+    },
+
 ];
 
 const ProjectSection = () => {
@@ -80,13 +117,15 @@ const ProjectSection = () => {
     }
 
     return (
-        <section >
+        <section id='projects'>
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 '>My projects</h2>
 
             <div className="text-white flex flex-row justify-center items-center gap-2 py-6 ">
                 <ProjectTags name="All" onClick={handleTagChange} isSelected={tag === "All"} />
-                <ProjectTags name="Web" onClick={handleTagChange} isSelected={tag === "Web"} />
-                <ProjectTags name="Mobile" onClick={handleTagChange} isSelected={tag === "Mobile"} />
+                <ProjectTags name="Javascript" onClick={handleTagChange} isSelected={tag === "Javascript"} />
+                <ProjectTags name="React" onClick={handleTagChange} isSelected={tag === "React"} />
+                <ProjectTags name="Next JS" onClick={handleTagChange} isSelected={tag === "Next JS"} />
+                <ProjectTags name="DSA" onClick={handleTagChange} isSelected={tag === "DSA"} />
             </div>
 
             <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -101,10 +140,10 @@ const ProjectSection = () => {
                         <ProjectCard
                             key={project.id}
                             title={project.title}
-                            description={project.description}
                             imageUrl={project.image}
                             gitUrl={project.gitUrl}
                             previewUrl={project.previewUrl}
+                            style={project.style}
                         />
                     </motion.li>
                 ))}

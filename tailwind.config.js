@@ -19,6 +19,9 @@ module.exports = {
         primary: colors.purple,
         secondary: colors.pink,
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      }
     },
   
   },
