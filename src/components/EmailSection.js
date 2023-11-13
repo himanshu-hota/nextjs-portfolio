@@ -13,7 +13,7 @@ const EmailSection = () => {
     return (
         <section
             id="contact"
-            className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+            className="grid md:grid-cols-2 my-12 md:my-12 py-14 gap-4 relative"
         >
          
             <div>
@@ -21,17 +21,15 @@ const EmailSection = () => {
                 <p className="text-[#ADB7BE] mb-4 max-w-mdmd"> Whether you have a project in mind, want to discuss collaboration opportunities, or simply share ideas, I&apos;m eager to hear from you. Feel free to reach out, and let&apos;s turn possibilities into reality.
                 </p>
 
-                <div className="socials flex flex-row gap-3">
-                    <Link href={'https://github.com/himanshu-hota'}><Image src={GithubIcon} alt='Github icon' /></Link>
-                    <Link href={'https://www.linkedin.com/in/himanshu-hota-187995200/'}><Image src={LinkedinIcon} alt='Github icon' /></Link>
-                    <Link href={'https://www.instagram.com/himanshuhota01/'}><Image src={InstaIcon} alt='Instagram icon' height={50} width={50} /></Link>
-                </div>
-
-
-
+            </div>
+          
+            <div className="socials animate-border bg-white bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] flex flex-row justify-center items-center gap-3 border-2  px-5 py-3 rounded-xl">
+                <Link href={'https://github.com/himanshu-hota'}><Image src={GithubIcon} alt='Github icon' /></Link>
+                <Link href={'https://www.linkedin.com/in/himanshu-hota-187995200/'}><Image src={LinkedinIcon} alt='Github icon' /></Link>
+                <Link href={'https://www.instagram.com/himanshuhota01/'}><Image src={InstaIcon} alt='Instagram icon' height={50} width={50} /></Link>
             </div>
 
-            <div>
+            {/* <div>
                 <form action={formURL} method='POST' className='flex flex-col mt-6
                     '>
                     <div className='mb-6'>
@@ -59,7 +57,7 @@ const EmailSection = () => {
                     <button type='submit' className='bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5  px-5 rounded-lg w-full'>Send Message</button>
 
                 </form>
-            </div>
+            </div> */}
 
         </section>
     )

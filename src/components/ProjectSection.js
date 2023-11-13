@@ -120,7 +120,7 @@ const ProjectSection = () => {
         <section id='projects'>
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 '>My projects</h2>
 
-            <div className="text-white flex flex-row justify-center items-center gap-2 py-6 ">
+            <div className="text-white flex flex-col md:flex-row justify-center items-center gap-2 py-6 ">
                 <ProjectTags name="All" onClick={handleTagChange} isSelected={tag === "All"} />
                 <ProjectTags name="Javascript" onClick={handleTagChange} isSelected={tag === "Javascript"} />
                 <ProjectTags name="React" onClick={handleTagChange} isSelected={tag === "React"} />
