@@ -20,7 +20,7 @@ const HeroSecion = () => {
                         <AnimatedName />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 ">
-                        Proficient in HTML, CSS, and JavaScript. Specializing in React and Next.js, I bring creativity and precision to user interfaces. Familiar with backend tech like Node.js and MongoDB, I create compelling web applications. Explore my portfolio for a glimpse into my design and development journey.
+                        Welcome to my digital space! I'm a Full Stack MERN Developer with a passion for crafting seamless digital experiences. Leveraging the power of MongoDB, Express.js, React.js, and Node.js, I specialize in building dynamic and scalable web applications. Explore my portfolio to discover a collection of projects showcasing my dedication to clean code, user-centric design, and innovation. Let&apos;s collaborate and bring your ideas to life!
                     </p>
                     <div className='flex flex-col md:flex-row'>
 

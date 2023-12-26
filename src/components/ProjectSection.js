@@ -100,7 +100,7 @@ const projectsData = [
     {
         id: 11,
         title: "Contact List",
-        image: "/images/projects/1.png",
+        image: "/images/projects/11.png",
         tag: ["All", "React"],
         gitUrl: "https://github.com/himanshu-hota/contacts",
         previewUrl: "https://main--jocular-elf-15d6df.netlify.app/",
