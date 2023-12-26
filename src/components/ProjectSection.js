@@ -8,22 +8,23 @@ import { motion, useInView } from 'framer-motion';
 const projectsData = [
     {
         id: 1,
-        title: "Contact List",
+        title: "Dev-Point",
         image: "/images/projects/1.png",
         tag: ["All", "React"],
-        gitUrl: "https://github.com/himanshu-hota/contacts",
-        previewUrl: "https://main--jocular-elf-15d6df.netlify.app/",
+        gitUrl: "https://github.com/himanshu-hota/devpoint-frontend",
+        previewUrl: "https://devpoint-frontend.vercel.app/",
         style: "shadow-green-900",
     },
     {
         id: 2,
-        title: "Netflix",
+        title: "Movix",
         image: "/images/projects/2.png",
         tag: ["All", "React"],
-        gitUrl: "https://github.com/himanshu-hota/Netflix-clone",
-        previewUrl: "https://netflix-clone-3bbfc.web.app/",
+        gitUrl: "https://github.com/himanshu-hota/movix",
+        previewUrl: "https://movix-ashen-six.vercel.app/",
         style: "shadow-blue-500",
-    },
+    }
+    ,
     {
         id: 3,
         title: "NFT Marketplace",
@@ -96,6 +97,16 @@ const projectsData = [
         previewUrl: "https://github.com/himanshu-hota/SupremeBatch",
         style: "shadow-green-400",
     },
+    {
+        id: 11,
+        title: "Contact List",
+        image: "/images/projects/1.png",
+        tag: ["All", "React"],
+        gitUrl: "https://github.com/himanshu-hota/contacts",
+        previewUrl: "https://main--jocular-elf-15d6df.netlify.app/",
+        style: "shadow-green-900",
+    },
+  
 
 ];
 
