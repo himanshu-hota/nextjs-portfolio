@@ -20,7 +20,7 @@ const HeroSecion = () => {
                         <AnimatedName />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 ">
-                        Welcome to my digital space! I'm a Full Stack MERN Developer with a passion for crafting seamless digital experiences. Leveraging the power of MongoDB, Express.js, React.js, and Node.js, I specialize in building dynamic and scalable web applications. Explore my portfolio to discover a collection of projects showcasing my dedication to clean code, user-centric design, and innovation. Let&apos;s collaborate and bring your ideas to life!
+                        Welcome to my digital space! I&apos;m a Full Stack MERN Developer with a passion for crafting seamless digital experiences. Leveraging the power of MongoDB, Express.js, React.js, and Node.js, I specialize in building dynamic and scalable web applications. Explore my portfolio to discover a collection of projects showcasing my dedication to clean code, user-centric design, and innovation. Let&apos;s collaborate and bring your ideas to life!
                     </p>
                     <div className='flex flex-col md:flex-row'>
 
