@@ -57,7 +57,7 @@ const AboutSection = () => {
       <Image src={'/images/about-image.png'} alt='about-section-image' className='drop-shadow-2xl' height={500} width={500} />
       <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
         <h2 className='text-4xl font-bold text-white mb-4 ' >About Me</h2>
-        <p className='text-base lg:text-lg '>Hello! I&apos;m Himanshu Hota, a passionate frontend developer hailing from the vibrant city of Raipur, Chhattisgarh. Armed with a degree from Disha College, I specialize in crafting seamless user experiences using technologies like React and Next.js.</p>
+        <p className='text-base lg:text-lg '>Hello! I&apos;m Himanshu Hota, a passionate MERN stack developer hailing from the vibrant city of Raipur, Chhattisgarh.I specialize in crafting seamless user experiences using technologies like React and Next.js.</p>
 
         <div className="flex flex-row mt-8">
           <TabButton active={tab === "skills"} selectTab={() => handleTabChange("skills")}>
