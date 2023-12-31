@@ -23,6 +23,7 @@ const TAB_DATA = [
   {
     title: "Education", id: "education", content: (
       <ul className='list-disc pl-2'>
+        <li>Chandigarh University</li>
         <li>CodeHelp</li>
         <li>Coding Ninjas</li>
         <li>Disha Education Society</li>

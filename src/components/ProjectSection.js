@@ -65,11 +65,11 @@ const projectsData = [
     },
     {
         id: 7,
-        title: "Gravero",
+        title: "E-State",
         image: "/images/projects/7.png",
-        tag: ["All", "Javascript"],
-        gitUrl: "https://github.com/himanshu-hota/Gravero",
-        previewUrl: "https://himanshu-hota.github.io/Gravero/",
+        tag: ["All", "React"],
+        gitUrl: "https://github.com/himanshu-hota/e-state",
+        previewUrl: "https://e-state-nine.vercel.app/",
         style: "shadow-gray-400",
     },
     {
@@ -108,7 +108,16 @@ const projectsData = [
         previewUrl: "https://main--jocular-elf-15d6df.netlify.app/",
         style: "shadow-green-900",
     },
-
+    ,
+    {
+        id: 12,
+        title: "Gravero",
+        image: "/images/projects/7.png",
+        tag: ["All", "Javascript"],
+        gitUrl: "https://github.com/himanshu-hota/Gravero",
+        previewUrl: "https://himanshu-hota.github.io/Gravero/",
+        style: "shadow-gray-400",
+    }
 
 ];
 
@@ -144,7 +153,7 @@ const ProjectSection = () => {
 
             </div>
 
-            <div className="carousels w-full h-full md:w-[40%] md:h-[60vh] mx-auto ">
+            <div className="carousels w-full h-full md:w-[80%] lg:w-[50%] mx-auto ">
                 <Carousel infiniteLoop={true} swipeable={true} autoPlay={true} stopOnHover={true} transitionTime={1000} showThumbs={false} >
                     {filteredProjects.map((project, index) => (
 
