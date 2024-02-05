@@ -117,6 +117,15 @@ const projectsData = [
         gitUrl: "https://github.com/himanshu-hota/Gravero",
         previewUrl: "https://himanshu-hota.github.io/Gravero/",
         style: "shadow-gray-400",
+    },
+    {
+        id: 13,
+        title: "Evently",
+        image: "/images/projects/13.png",
+        tag: ["All", "Next JS"],
+        gitUrl: "https://github.com/himanshu-hota/evently",
+        previewUrl: "https://letsevent.vercel.app/",
+        style: "shadow-green-400",
     }
 
 ];
