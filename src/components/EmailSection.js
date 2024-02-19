@@ -2,6 +2,10 @@ import React from 'react';
 import GithubIcon from '../../public/github-icon.svg';
 import LinkedinIcon from '../../public/linkedin-icon.svg';
 import InstaIcon from '../../public/insta-icon.svg';
+import CodeStudiocon from '../../public/codingninjas.svg';
+import GFGIcon from '../../public/gfg.svg';
+import LeetCodeIcon from '../../public/leetcode.svg';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -9,25 +13,32 @@ const formURL = process.env.FORM_URL;
 
 const EmailSection = () => {
 
-    
+
     return (
         <section
             id="contact"
             className="grid md:grid-cols-2 my-2 md:my-12 py-14 gap-4 relative"
         >
-         
+
             <div>
                 <h5 className="text-xl font-bold text-white my-2">Lets Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-mdmd"> Whether you have a project in mind, want to discuss collaboration opportunities, or simply share ideas, I&apos;m eager to hear from you. Feel free to reach out, and let&apos;s turn possibilities into reality.
                 </p>
 
             </div>
-          
-            <div className="socials animate-border bg-white bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] flex flex-row justify-center items-center gap-3 border-2  px-5 py-3 rounded-xl">
-                <Link href={'https://github.com/himanshu-hota'}><Image src={GithubIcon} alt='Github icon' /></Link>
-                <Link href={'https://www.linkedin.com/in/himanshu-hota-187995200/'}><Image src={LinkedinIcon} alt='Github icon' /></Link>
-                <Link href={'https://www.instagram.com/himanshuhota01/'}><Image src={InstaIcon} alt='Instagram icon' height={50} width={50} /></Link>
+
+            <div className="socials animate-border bg-white bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] flex flex-row justify-center items-center flex-wrap gap-6 md:gap-8 border-2  px-5 py-3 rounded-xl">
+                <Link href={'https://github.com/himanshu-hota'} target='_blank'><Image src={GithubIcon} alt='Github icon' /></Link>
+                <Link href={'https://www.linkedin.com/in/himanshu-hota-187995200/'} target='_blank'><Image src={LinkedinIcon} alt='Github icon' /></Link>
+                <Link href={'https://www.instagram.com/himanshuhota01/'} target='_blank'><Image src={InstaIcon} alt='Instagram icon' height=
+                    {50} width={50} /></Link>
+                <Link href={'https://leetcode.com/Himanshuhota01/'} target='_blank'><Image src={LeetCodeIcon} alt='Leetcode icon' height={50} width={50} /></Link>
+                <Link href={'https://auth.geeksforgeeks.org/user/himanshuhota55'} target='_blank'><Image src={GFGIcon} alt='Instagram icon' height={50} width={50} /></Link>
+                <Link href={'https://www.codingninjas.com/studio/profile/Himanshu_Hota'} target='_blank'><Image src={CodeStudiocon} alt='Codestudio icon' height={50} width={50} /></Link>
+
             </div>
+
+
 
             {/* <div>
                 <form action={formURL} method='POST' className='flex flex-col mt-6
